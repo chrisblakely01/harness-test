@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: le multi
+      identifier: le_multi
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: "on"
+          offVariation: "off"
+        variations:
+        - identifier: "on"
+          value: "1"
+        - identifier: "off"
+          value: "0"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "on"
+          offVariation: "off"
+        state: "off"
+  - flag:
       name: test flag
       identifier: test_flag
       description: ""
