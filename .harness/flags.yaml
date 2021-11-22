@@ -21,6 +21,10 @@ featureFlags:
           onVariation: "on"
           offVariation: "off"
         state: "off"
+        targetRules:
+        - targets:
+          - identifier: donut
+          variation: "on"
   - flag:
       name: test flag
       identifier: test_flag
