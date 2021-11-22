@@ -76,6 +76,6 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: donut
-          variation: "true"
+          variation: "false"
   projectIdentifier: chris_demo_2
   orgIdentifier: default
