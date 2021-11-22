@@ -51,7 +51,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: donut
-          variation: "off"
+          variation: "on"
   - flag:
       name: test flag
       identifier: test_flag
