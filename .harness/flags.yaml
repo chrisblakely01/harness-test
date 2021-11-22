@@ -1,6 +1,31 @@
 featureFlags:
   flags:
   - flag:
+      name: bool flag 2
+      identifier: bool_flag_2
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: donut
+          variation: "false"
+  - flag:
       name: le multi
       identifier: le_multi
       description: ""
@@ -15,12 +40,14 @@ featureFlags:
           value: "1"
         - identifier: "off"
           value: "0"
+        - identifier: middle
+          value: donut
       environments:
       - identifier: test_env
         default:
           onVariation: "on"
           offVariation: "off"
-        state: "off"
+        state: "on"
         targetRules:
         - targets:
           - identifier: donut
