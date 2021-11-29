@@ -24,7 +24,7 @@ featureFlags:
         targetRules:
         - targets:
           - identifier: donut
-          variation: "false"
+          variation: "true"
   - flag:
       name: le multi
       identifier: le_multi
