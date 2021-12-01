@@ -1,14 +1,9 @@
 featureFlags:
   flags:
   - flag:
-      name: new flag
-      identifier: new_flag
-      description: this is a long description this is a long descriptionthis is a
-        long descriptionthis is a long descriptionthis is a long descriptionthis is
-        a long descriptionthis is a long descriptionthis is a long descriptionthis
-        is a long descriptionthis is a long descriptionthis is a long descriptionthis
-        is a long descriptionthis is a long descriptionthis is a long descriptionthis
-        is a long descriptionthis is a long descriptionthis is a long description
+      name: bool flag 2
+      identifier: bool_flag_2
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -21,10 +16,108 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: my_target
+      - identifier: test_env
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "off"
-  projectIdentifier: chris_long_repo1
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: donut
+          variation: "false"
+  - flag:
+      name: le multi
+      identifier: le_multi
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: "on"
+          offVariation: "off"
+        variations:
+        - identifier: "on"
+          value: "1"
+        - identifier: "off"
+          value: "0"
+        - identifier: middle
+          value: donut
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "on"
+          offVariation: "off"
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: donut
+          variation: "on"
+  - flag:
+      name: new flag test
+      identifier: new_flag_test
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: TERRAFORM_CONFIG_TEST
+      identifier: TERRAFORM_CONFIG_TEST
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: test flag
+      identifier: test_flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: donut
+          variation: "true"
+  projectIdentifier: chris_demo_2
   orgIdentifier: default
