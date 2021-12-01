@@ -91,9 +91,9 @@ featureFlags:
       environments:
       - identifier: test_env
         default:
-          onVariation: "false"
-          offVariation: "false"
-        state: "off"
+          onVariation: "true"
+          offVariation: "true"
+        state: "on"
   - flag:
       name: test flag
       identifier: test_flag
