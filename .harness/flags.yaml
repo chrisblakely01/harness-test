@@ -3,7 +3,12 @@ featureFlags:
   - flag:
       name: new flag
       identifier: new_flag
-      description: ""
+      description: this is a long description this is a long descriptionthis is a
+        long descriptionthis is a long descriptionthis is a long descriptionthis is
+        a long descriptionthis is a long descriptionthis is a long descriptionthis
+        is a long descriptionthis is a long descriptionthis is a long descriptionthis
+        is a long descriptionthis is a long descriptionthis is a long descriptionthis
+        is a long descriptionthis is a long descriptionthis is a long description
       permanent: false
       spec:
         type: boolean
