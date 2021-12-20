@@ -1,8 +1,8 @@
 featureFlags:
   flags:
   - flag:
-      name: test
-      identifier: test
+      name: asdasdasd
+      identifier: asdasdasd
       description: ""
       permanent: false
       spec:
@@ -15,11 +15,5 @@ featureFlags:
           value: "true"
         - identifier: "false"
           value: "false"
-      environments:
-      - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  projectIdentifier: chris_git_not_enabled
+  projectIdentifier: chris_delegate_connector
   orgIdentifier: default
