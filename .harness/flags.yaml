@@ -18,8 +18,8 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: "false"
-          offVariation: "false"
+          onVariation: "true"
+          offVariation: "true"
         state: "off"
   projectIdentifier: chris_platformconnector
   orgIdentifier: default
