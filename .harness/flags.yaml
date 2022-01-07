@@ -1,27 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: asdsadas
-      identifier: asdsadas
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  - flag:
       name: bool flag 2
       identifier: bool_flag_2
       description: ""
