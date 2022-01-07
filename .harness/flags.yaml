@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: nnewww
+      identifier: nnewww
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: test flag
       identifier: test_flag
       description: ""
