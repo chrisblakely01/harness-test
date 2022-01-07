@@ -26,33 +26,6 @@ featureFlags:
           - identifier: donut
           variation: "false"
   - flag:
-      name: le multi
-      identifier: le_multi
-      description: ""
-      permanent: false
-      spec:
-        type: string
-        default:
-          onVariation: "on"
-          offVariation: "off"
-        variations:
-        - identifier: "on"
-          value: "1"
-        - identifier: "off"
-          value: "0"
-        - identifier: middle
-          value: donut
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: "on"
-          offVariation: "off"
-        state: "on"
-        targetRules:
-        - targets:
-          - identifier: donut
-          variation: "on"
-  - flag:
       name: new flag test
       identifier: new_flag_test
       description: ""
