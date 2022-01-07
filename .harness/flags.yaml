@@ -74,27 +74,6 @@ featureFlags:
           - identifier: donut
           variation: "on"
   - flag:
-      name: new flag
-      identifier: new_flag
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  - flag:
       name: new flag test
       identifier: new_flag_test
       description: ""
