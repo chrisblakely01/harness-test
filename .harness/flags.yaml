@@ -119,5 +119,26 @@ featureFlags:
         - targets:
           - identifier: donut
           variation: "true"
+  - flag:
+      name: TEST_FLAG
+      identifier: TEST_FLAG
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: chris_demo_2
   orgIdentifier: default
