@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: seffeeeeee
+      name: TEST UPDATE
       identifier: seffeeeeee
       description: ""
       permanent: false
