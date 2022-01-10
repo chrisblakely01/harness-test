@@ -1,8 +1,8 @@
 featureFlags:
   flags:
   - flag:
-      name: TEST UPDATE
-      identifier: seffeeeeee
+      name: asdasdasdasda
+      identifier: asdasdasdasda
       description: ""
       permanent: false
       spec:
