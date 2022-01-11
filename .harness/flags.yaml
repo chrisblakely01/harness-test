@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: NEW FLAG NAME
+      name: NEW FLAG NAMEasdasdasd
       identifier: asdasdasdasda
       description: ""
       permanent: false
