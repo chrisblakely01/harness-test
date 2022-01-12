@@ -1,9 +1,9 @@
 featureFlags:
   flags:
   - flag:
-      name: sdfsdfsdf
+      name: sdfsdfsdfASDASDASDASD
       identifier: sdfsdfsdf
-      description: ""
+      description: ASD
       permanent: false
       spec:
         type: boolean
