@@ -1,31 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: sdfsdfsdfASDASDASDASD
-      identifier: sdfsdfsdf
-      description: ASD
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      prerequisites:
-      - flagIdentifier: test_flag
-        variations:
-        - "true"
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  - flag:
       name: test flag
       identifier: test_flag
       description: ""
