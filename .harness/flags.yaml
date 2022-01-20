@@ -1,5 +1,6 @@
 featureFlags:
   flags:
+    - flag:
       name: asdasd
       identifier: asdasd
       description: ""
