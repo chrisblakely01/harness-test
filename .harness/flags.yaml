@@ -1,25 +1,4 @@
 featureFlags:
-  flags:
-  - flag:
-      name: asdasdasd
-      identifier: asdasdasd
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
+  flags: []
   projectIdentifier: chris_demo_2
   orgIdentifier: default
