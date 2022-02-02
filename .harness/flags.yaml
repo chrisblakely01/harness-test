@@ -1,6 +1,29 @@
 featureFlags:
   flags:
   - flag:
+      name: multi_flag
+      identifier: multi_flag
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: small
+          offVariation: large
+        variations:
+        - identifier: small
+          value: "10"
+        - identifier: medium
+          value: "50"
+        - identifier: large
+          value: "100"
+      environments:
+      - identifier: test_env
+        default:
+          onVariation: small
+          offVariation: large
+        state: "off"
+  - flag:
       name: test1
       identifier: test1
       description: ""
