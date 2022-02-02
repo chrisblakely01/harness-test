@@ -17,6 +17,12 @@ featureFlags:
           value: "50"
         - identifier: large
           value: "100"
+        - identifier: xlarge
+          value: "150"
+        - identifier: xxlarge
+          value: "200"
+        - identifier: xxxlarge
+          value: "500"
       environments:
       - identifier: test_env
         default:
