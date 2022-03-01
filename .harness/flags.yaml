@@ -1,37 +1,8 @@
 featureFlags:
   flags:
   - flag:
-      name: multi_flag
-      identifier: multi_flag
-      description: ""
-      permanent: false
-      spec:
-        type: string
-        default:
-          onVariation: small
-          offVariation: large
-        variations:
-        - identifier: small
-          value: "10"
-        - identifier: medium
-          value: "50"
-        - identifier: large
-          value: "100"
-        - identifier: xlarge
-          value: "150"
-        - identifier: xxlarge
-          value: "200"
-        - identifier: xxxlarge
-          value: "500"
-      environments:
-      - identifier: test_env
-        default:
-          onVariation: small
-          offVariation: large
-        state: "off"
-  - flag:
-      name: test1
-      identifier: test1
+      name: asdasdasd
+      identifier: asdasdasd
       description: ""
       permanent: false
       spec:
@@ -45,10 +16,10 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: test_env
+      - identifier: test1
         default:
           onVariation: "true"
           offVariation: "false"
-        state: "on"
-  projectIdentifier: chris_demo_2
+        state: "off"
+  projectIdentifier: chris_delegate_connector
   orgIdentifier: default
