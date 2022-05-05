@@ -1,8 +1,8 @@
 featureFlags:
   flags:
   - flag:
-      name: asdasdasd
-      identifier: asdasdasd
+      name: test
+      identifier: test
       description: ""
       permanent: false
       spec:
@@ -16,10 +16,10 @@ featureFlags:
         - identifier: "false"
           value: "false"
       environments:
-      - identifier: test1
+      - identifier: test
         default:
           onVariation: "true"
-          offVariation: "false"
-        state: "off"
-  projectIdentifier: chris_delegate_connector
+          offVariation: "true"
+        state: "on"
+  projectIdentifier: chris_platformconnector
   orgIdentifier: default
