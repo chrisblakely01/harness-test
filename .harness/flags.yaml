@@ -15,11 +15,5 @@ featureFlags:
           value: "true"
         - identifier: "false"
           value: "false"
-      environments:
-      - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "true"
-        state: "on"
-  projectIdentifier: chris_platformconnector
+  projectIdentifier: chris_git_sync
   orgIdentifier: default
