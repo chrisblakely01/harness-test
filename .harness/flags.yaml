@@ -32,6 +32,7 @@ featureFlags:
             - target_group_1
         targetRules:
         - targets:
+          - identifier: t1
           - identifier: t2
           variation: "true"
   projectIdentifier: chris_git_sync
