@@ -1,47 +1,4 @@
 featureFlags:
-  flags:
-  - flag:
-      name: test
-      identifier: test
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "true"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-        rules:
-        - priority: 1
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_2
-        - priority: 3
-          serve:
-            serveVariation: "false"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
-        targetRules:
-        - targets:
-          - identifier: t1
-          - identifier: t2
-          variation: "true"
+  flags: []
   projectIdentifier: chris_git_sync
   orgIdentifier: default
