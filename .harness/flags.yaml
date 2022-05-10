@@ -30,14 +30,6 @@ featureFlags:
             op: segmentMatch
             values:
             - target_group_2
-        - priority: 2
-          serve:
-            serveVariation: "false"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
         targetRules:
         - targets:
           - identifier: t1
