@@ -22,6 +22,14 @@ featureFlags:
           offVariation: "false"
         state: "off"
         rules:
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - target_group_2
         - priority: 2
           serve:
             serveVariation: "false"
