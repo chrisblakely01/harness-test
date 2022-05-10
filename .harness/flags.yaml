@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: test11
+      name: test11ss
       identifier: test11
       description: ""
       permanent: false
@@ -40,10 +40,10 @@ featureFlags:
             - target_group_2
         targetRules:
         - targets:
-          - identifier: t1
-          variation: "false"
-        - targets:
           - identifier: t2
           variation: "true"
+        - targets:
+          - identifier: t1
+          variation: "false"
   projectIdentifier: chris_git_sync
   orgIdentifier: default
