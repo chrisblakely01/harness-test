@@ -45,5 +45,26 @@ featureFlags:
         - targets:
           - identifier: t2
           variation: "true"
+  - flag:
+      name: test113
+      identifier: test113
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: chris_git_sync
   orgIdentifier: default
