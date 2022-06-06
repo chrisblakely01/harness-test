@@ -24,7 +24,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: "true"
+            serveVariation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
@@ -40,11 +40,11 @@ featureFlags:
             - target_group_2
         targetRules:
         - targets:
-          - identifier: t2
-          variation: "true"
-        - targets:
           - identifier: t1
           variation: "false"
+        - targets:
+          - identifier: t2
+          variation: "true"
   - flag:
       name: test113
       identifier: test113
@@ -69,7 +69,7 @@ featureFlags:
         rules:
         - priority: 0
           serve:
-            serveVariation: "true"
+            serveVariation: "false"
           clauses:
           - attribute: ""
             op: segmentMatch
