@@ -63,14 +63,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        rules:
-        - priority: 0
-          serve:
-            serveVariation: "false"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - target_group_1
   projectIdentifier: chris_git_sync
   orgIdentifier: default
