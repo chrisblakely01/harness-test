@@ -21,9 +21,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-        targetRules:
-        - targets:
-          - identifier: t1
-          variation: "true"
   projectIdentifier: chris_git
   orgIdentifier: default
